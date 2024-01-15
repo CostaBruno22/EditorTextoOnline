@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+        linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+        linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 25px 25px;
+}
+
+.container {
+    background: #FDF7E4;
+    width: 90vmin;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #FDF7E4;
+    outline: none;
+    color: #402B3A;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+select {
+    padding: 7px;
+    border: #402B3A 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options label,
+.options select {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #FDF7E4,  0 0 0 3px #402B3A;
+}
+input[type="color"]::-moz-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #FDF7E4,  0 0 0 3px #402B3A;
+}
+
+
+#text-input {
+    margin-top: 15px;
+    border: #DED0B6 solid 1px;
+    padding: 20px;
+    height: 50vh;
+}
+
+.active {
+    background-color: #a85;
+}
